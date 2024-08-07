@@ -1,0 +1,208 @@
+/* General styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style pour l'image de fond */
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px); /* Ajustez le niveau de flou ici */
+  z-index: -1;
+}
+
+
+/* Video Background */
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+/* Header */
+#header {
+  background: transparent;
+  padding: 15px 0;
+  height: 70px;
+  transition: all 0.5s;
+}
+
+/* Navbar */
+.navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.navbar ul li {
+  position: relative;
+}
+
+.navbar ul li a {
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+/* Hero Section */
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+#hero .btn-get-started {
+  margin-top: 20px;
+  background: #ff923c;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+
+#hero .btn-get-started:hover {
+  background: #e88028;
+}
+
+/* Emploi Section */
+#Emploi {
+  padding: 60px 0;
+}
+
+#Emploi .section-header {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+
+#Emploi .section-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#Emploi .section-description {
+  font-size: 18px;
+  color: #666;
+}
+
+#Emploi .box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+#Emploi .box:hover {
+  transform: translateY(-10px);
+}
+
+#Emploi .box .icon {
+  margin-bottom: 10px;
+}
+
+#Emploi .box .title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#Emploi .box .description {
+  font-size: 16px;
+  color: #777;
+}
+/* Logo styles */
+#logo {
+  display: flex;
+  align-items: center;
+}
+
+#logo .logo-img {
+  height: 70px; /* Adjust the height as needed */
+  width: auto;
+}
+
+
+.custom-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ff923c;
+  color: #fff;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+
+.custom-button:hover {
+  background: #e88028;
+}
+
+/* Call To Action Section */
+#call-to-action {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  url('/assets/pic.jpg') fixed center center;
+
+  background-size: cover;
+  padding: 80px 0;
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+
+#call-to-action .cta-title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#call-to-action .cta-text {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#call-to-action .cta-btn {
+  background: #ff923c;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+
+#call-to-action .cta-btn:hover {
+  background: #e88028;
+}
+
+/* Back to top button */
+.back-to-top {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background: #ff923c;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.back-to-top:hover {
+  background: #e88028;
+}

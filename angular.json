@@ -21,12 +21,20 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
+              "src/assets/one.jpg",
+              "src/assets/",
+              "src/styles.css",
+              "src/assets/css/bootstrap.min.css",
+              
               {
                 "glob": "**/*",
                 "input": "public"
               }
+            
+             
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/rose-red.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -85,6 +93,7 @@
               }
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/rose-red.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -92,5 +101,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "13aa34be-2d04-4fe2-9b79-104e72e7ee4a"
   }
 }

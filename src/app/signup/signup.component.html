@@ -1,0 +1,61 @@
+<div class="background-container">
+  <img src="assets/home.jpg" alt="background-img" class="background-img">
+</div>
+<form (ngSubmit)="onSubmit()">
+  <h2>Inscrivez-vous et commencez à postuler</h2>
+
+  <div class="form-sections">
+    <div class="form-section">
+      <div style="position: relative;">
+        <label for="firstname">Prénom :</label>
+        <input type="text" id="firstname" [(ngModel)]="firstname" name="firstname" placeholder="Tapez votre Prénom" required>
+        <div *ngIf="submitted && !firstname" class="error">*Prénom est requis.</div>
+      </div>
+      <div style="position: relative;">
+        <label for="lastname">Nom :</label>
+        <input type="text" id="lastname" [(ngModel)]="lastname" name="lastname" placeholder="Tapez votre Nom" required>
+        <div *ngIf="submitted && !lastname" class="error">*Nom est requis.</div>
+      </div>
+      <div style="position: relative;">
+        <label for="username">Nom d'utilisateur :</label>
+        <input type="text" id="username" [(ngModel)]="username" name="username" placeholder="Nom d'utilisateur" required>
+        <div *ngIf="submitted && !username" class="error">*Nom d'utilisateur est requis.</div>
+      </div>
+      <div style="position: relative;">
+        <label for="email">E-mail :</label>
+        <input type="email" id="email" [(ngModel)]="email" name="email" placeholder="E-mail" required (input)="validateEmail()">
+        <div *ngIf="submitted && !email" class="error">*E-mail est requis.</div>
+        <div *ngIf="submitted && email && !emailValid" class="error">*E-mail invalide.</div>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <div style="position: relative;">
+        <label for="phone">Numéro téléphone :</label>
+        <input type="tel" id="phone" [(ngModel)]="phone" name="phone" placeholder="+212" required (input)="validatePhone()" value="+212">
+        <div *ngIf="submitted && !phone" class="error">*Numéro de téléphone est requis.</div>
+        <div *ngIf="submitted && phone && !phoneValid" class="error">*Le Numéro de téléphone doit commencer par +212 et contenir 9 chiffres après +212.</div>
+      </div>
+      <div style="position: relative;">
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" [(ngModel)]="password" name="password" placeholder="Mot de passe" required>
+        <div *ngIf="submitted && !password" class="error">*Mot de passe est requis.</div>
+      </div>
+      <div style="position: relative;">
+        <label for="confirmPassword">Confirmé votre mot de passe :</label>
+        <input type="password" id="confirmPassword" [(ngModel)]="confirmPassword" name="confirmPassword" placeholder="Confirmé votre mot de passe" required>
+        <div *ngIf="submitted && !confirmPassword" class="error">*Confirmation du mot de passe est requise.</div>
+        <div *ngIf="submitted && password && confirmPassword && password !== confirmPassword" class="error">*Les mots de passe ne correspondent pas.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="button-container">
+    <button type="submit">S'enregistrer</button>
+  </div>
+
+  <div class="signup-text">
+    <span>Vous avez déjà un compte ?</span>
+    <a href="#" (click)="goToLogin()">Se connecter</a>
+  </div>
+</form>

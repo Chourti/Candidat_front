@@ -1,0 +1,35 @@
+<!-- <nav class="navbar">
+    <div class="navbar-container">
+      <img src="assets/be.png" alt="Home" class="nav-icon">
+  
+      <div class="navbar-links">
+        <button (click)="navigateTo('home')" class="nav-button">
+          <i class="fa-solid fa-house"></i> Home </button>
+        <button (click)="navigateTo('contact')" class="nav-button">Contact</button>
+        <button (click)="navigateTo('profile')" class="nav-button">
+          <i class="fa-solid fa-user"></i> Profile
+        </button>
+      </div>
+  
+      <button (click)="logout()" class="logout-button">Se Déconnecter</button>
+    </div>
+  </nav>
+   -->
+
+   <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div id="logo">
+        <img src="assets/be.png" alt="Logo" class="logo-img">
+      </div>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><button class="home-button" (click)="navigateTo('home')">Accueil</button></li>
+          <li><button class="emploi-button" (click)="navigateTo('emploi')">Nos Offres</button></li>
+          <li><button class="contact-button" (click)="navigateTo('contact')">Contact us</button></li>
+          <li><button class="logout-button" (click)="logout()">Se Déconnecter</button></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+  

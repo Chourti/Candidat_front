@@ -1,0 +1,62 @@
+<app-navbar></app-navbar>
+
+<section id="postuler-section">
+    <div class="background-container"></div>
+
+    <div class="form-container">
+        <h2>Postuler</h2>
+        <form [formGroup]="postulerForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" class="form-control" formControlName="nom" required>
+            </div>
+
+            <div class="form-group">
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" class="form-control" formControlName="prenom" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="form-control" formControlName="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telephone">Téléphone</label>
+                <input type="tel" id="telephone" class="form-control" formControlName="telephone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ville">Ville</label>
+                <input type="text" id="ville" class="form-control" formControlName="ville" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nomPere">Nom du Père</label>
+                <input type="text" id="nomPere" class="form-control" formControlName="nomPere" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nomMere">Nom de la Mère</label>
+                <input type="text" id="nomMere" class="form-control" formControlName="nomMere" required>
+            </div>
+
+            <div class="file-upload">
+                <label for="cv">Importez votre CV</label>
+                <input id="cv" type="file" (change)="onFileSelected($event, 'cv')" required>
+            </div>
+
+            <div class="file-upload">
+                <label for="cin">Importez votre CIN</label>
+                <input id="cin" type="file" (change)="onFileSelected($event, 'cin')" required>
+            </div>
+
+            <div class="file-upload">
+                <label for="diplome">Importez votre Diplome</label>
+                <input id="diplome" type="file" (change)="onFileSelected($event, 'diplome')" required>
+            </div>
+
+            <button class="btn btn-primary" type="submit">Envoyer</button>
+        </form>
+    </div>
+</section>

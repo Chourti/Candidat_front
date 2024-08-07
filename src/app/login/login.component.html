@@ -1,0 +1,35 @@
+<div class="background-container">
+  <img src="assets/home.jpg" alt="background-img" class="background-img">
+</div>
+<form (ngSubmit)="onSubmit()">
+  <div class="img-container">
+    <img src="assets/be.png" alt="Test Image">
+  </div>
+  <h2>Ravi de Vous Revoir !</h2>
+  <div style="position: relative;">
+    <label for="matricule">E-mail :</label>
+    <div class="input-container">
+      <!-- <i class="fa-solid fa-user"></i> -->
+      <input type="text" id="matricule" [(ngModel)]="matricule" name="matricule" placeholder="Entrer votre Matricule" required>
+    </div>
+    <div *ngIf="submitted && !matricule" class="error">*Matricule est requis.</div>
+  </div>
+  <div style="position: relative;">
+    <label for="password">Mot de passe :</label>
+    <div class="input-container">
+      <!-- <i class="fa-solid fa-lock"></i> -->
+      <input type="password" id="password" [(ngModel)]="password" name="password" placeholder="Mot de passe" required>
+    </div>
+    <div *ngIf="submitted && !password" class="error">*Mot de passe est requis.</div>
+  </div>
+  <div class="forgot-password">
+    <a href="#" (click)="goToForgotPassword()">Mot de passe oublié ?</a>
+  </div>
+  <div class="button-container">
+    <button type="submit">Se connecter</button>
+  </div>
+  <div class="signup-text">
+    <span>Vous n'avez pas de compte ?</span>
+    <a href="#" (click)="goToSignup()">S'enregistrer</a>
+  </div>
+</form>

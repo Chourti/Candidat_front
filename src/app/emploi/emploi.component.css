@@ -1,0 +1,79 @@
+/* Emploi Section */
+#Emploi {
+    padding: 60px 0;
+    background-color: #f6f5f5; /* Light grey background color */
+  }
+  
+  #Emploi .section-header {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  
+  #Emploi .section-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #Emploi .section-description {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  #Emploi .box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  #Emploi .box:hover {
+    transform: translateY(-10px);
+  }
+  
+  #Emploi .box .icon {
+    margin-bottom: 10px;
+  }
+  
+  #Emploi .box .title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  #Emploi .box .description {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  /* Button Styles */
+.btn.custom-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff; /* Primary color */
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    cursor: pointer;
+  }
+  
+  .btn.custom-button:hover {
+    background-color: #0056b3; /* Darker shade of primary color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }
+  
+  .btn.custom-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5);
+  }
+  
+  .btn.custom-button:active {
+    background-color: #004085; /* Even darker shade for active state */
+    transform: translateY(0);
+  }
+  

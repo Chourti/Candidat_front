@@ -1,0 +1,130 @@
+/* Keyframes for background color animation */
+@keyframes slidingBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.footer-dark {
+  background: linear-gradient(90deg, #565654, #534848, #544803);
+  background-size: 300% 300%;
+  animation: slidingBackground 8s ease infinite;
+  color: rgb(99, 99, 99);
+  padding: 20px 10px; /* Reduced padding */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top: 1px solid #444;
+}
+
+.footer-dark .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-dark .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer-dark .item {
+  margin-bottom: 10px; /* Reduced margin */
+  flex: 1;
+  text-align: center;
+  margin-left: 200px;
+  margin-top: 20px;
+}
+
+.footer-dark .item.contact {
+  text-align: right; /* Align contact info to the right */
+}
+
+.footer-dark h3 {
+  margin-bottom: 8px; /* Reduced margin */
+  font-size: 16px; /* Reduced font size */
+  color: #d6d6d6;
+}
+
+.footer-dark p, .footer-dark ul li {
+  color: #d6d6d6;
+  margin-bottom: 8px; /* Reduced margin */
+  font-size: 14px; /* Reduced font size */
+}
+
+.footer-dark ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-dark ul li {
+  margin-bottom: 8px; /* Reduced margin */
+  color: #d6d6d6;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-dark ul li i {
+  font-size: 1.1em; /* Adjusted icon size */
+  color: #d6d6d6;
+}
+
+.footer-dark ul li a {
+  color: #d6d6d6;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-dark ul li a:hover {
+  color: #fff;
+}
+
+.footer-dark .text {
+  color: #bbb;
+  text-align: center;
+  max-width: 800px;
+  margin: 10px auto; /* Reduced margin */
+  line-height: 1.4; /* Adjusted line-height */
+  font-size: 14px; /* Reduced font size */
+}
+
+.footer-dark .social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px; /* Reduced margin */
+}
+
+.footer-dark .social a {
+  margin: 0 8px; /* Reduced margin */
+  color: #d6d6d6;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.footer-dark .social a:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.footer-dark .copyright {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 12px; /* Reduced font size */
+  color: #797979;
+  border-top: 1px solid #444;
+  margin-top: 10px; /* Reduced margin */
+}
